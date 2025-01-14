@@ -2,6 +2,7 @@ return {
   {
     "yetone/avante.nvim",
     event = "VeryLazy",
+    commit = "main",
     dependencies = {
       "stevearc/dressing.nvim",
     },
