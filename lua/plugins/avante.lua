@@ -7,11 +7,12 @@ return {
     },
     opts = {
       hints = { enabled = false },
-      provider = "openai",
-      openai = {
-        model = "o3-mini-2025-01-31",
-        reasoning_effort = "high",
-      },
+      -- provider = "claude",
+      -- openai = {
+      --   model = "o3-mini-2025-01-31",
+      --   reasoning_effort = "medium",
+      --   timeout = 120000,
+      -- },
     },
     build = LazyVim.is_win() and "powershell -ExecutionPolicy Bypass -File Build.ps1 -BuildFromSource false" or "make",
   },
